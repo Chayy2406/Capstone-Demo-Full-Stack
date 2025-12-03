@@ -1,0 +1,43 @@
+This kind of mapping is exactly what your app can do, but you will need to treat everything as “same active ingredient, typical OTC use” rather than one‑to‑one brand guarantees.  Below are sample pairs you can model, grouped by indication and spread across US, India, UK, Canada, and Australia.[1][2][3]
+
+## Pain / fever (paracetamol–acetaminophen)
+
+All of these are just brand variants of paracetamol/acetaminophen used for mild pain and fever.[2][4][3]
+- US: Tylenol (acetaminophen) ↔ India: Dolo 650 / Calpol 650 (paracetamol 650 mg)[5][6][2]
+- US: Tylenol ↔ UK: Panadol / generic “Paracetamol” tablets[4][2]
+- US: Tylenol ↔ Canada: Tylenol (same ingredient/brand)[4]
+- US: Tylenol ↔ Australia: Panadol[2][4]
+
+## NSAID pain relievers
+
+Same NSAID, different branding; all commonly used for pain/inflammation.[3][4]
+- US: Advil / Motrin (ibuprofen) ↔ India: Brufen / Combiflam (ibuprofen‑containing)  
+- US: Advil ↔ UK: Nurofen (ibuprofen)  
+- US: Advil ↔ Canada: Advil (same brand/ingredient)[4]
+- US: Advil ↔ Australia: Nurofen (ibuprofen)
+
+## Antihistamine for allergies
+
+Diphenhydramine is the classic sedating antihistamine; brands vary.[1][4]
+- US: Benadryl (diphenhydramine) ↔ India: Benadryl (same brand, but check exact formulation)[1]
+- US: Benadryl ↔ UK: Nytol Original / Boots Sleepeaze (diphenhydramine sleep/allergy products)[1]
+- US: Benadryl ↔ Canada: Benadryl (diphenhydramine)[1]
+- US: Benadryl ↔ Australia: Restavit / similar diphenhydramine‑based OTC sleep aids (same molecule, different OTC positioning)
+
+## Cholesterol (atorvastatin)
+
+Here the generic is the same (atorvastatin), but brands differ.[1]
+- US: Lipitor (atorvastatin) ↔ India: Atocor (atorvastatin)[1]
+- US: Lipitor ↔ UK: generic “Atorvastatin” tablets (same molecule)  
+- US: Lipitor ↔ Canada: Lipitor / generic atorvastatin  
+- US: Lipitor ↔ Australia: Lipitor / generic atorvastatin
+
+## Acid reflux (proton pump inhibitors)
+
+Omeprazole and pantoprazole are typical PPIs with different local brands.  
+- US: Prilosec (omeprazole) ↔ India: Omez / Ocid (omeprazole)  
+- US: Prilosec ↔ UK: Losec / generic omeprazole  
+- US: Protonix (pantoprazole) ↔ Canada: Pantoloc / generic pantoprazole  
+- US: Nexium (esomeprazole) ↔ Australia: Nexium / generic esomeprazole  
+
+For your app, it is safer to anchor on the generic (INN/USAN) name, then expose country‑specific brands as “common brands that contain this active ingredient” rather than “exact equivalent,” since formulations and strengths can vary by market.[7][8][1]

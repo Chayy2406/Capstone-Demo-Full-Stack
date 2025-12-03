@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+*.egg-info/
+
+# JSON files used for middleware communication
+translation_input.json
+translation_output.json
+lookup_input.json
+lookup_output.json
+
+# Node
+node_modules/
+frontend/node_modules/
+frontend/dist/
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
