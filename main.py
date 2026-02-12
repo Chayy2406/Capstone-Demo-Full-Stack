@@ -13,7 +13,7 @@ app = FastAPI(
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000"],  
+    allow_origins=["*"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -58,8 +58,9 @@ def wait_for_json(path, timeout=10):
         time.sleep(0.1)
     return read_json(path)
 
-#Sarting Point
+# Starting Point - supports both /process (legacy) and /api/process (Vercel)
 @app.post("/process", response_model=FinalOutput)
+@app.post("/api/process", response_model=FinalOutput)
 def process_medication(data: UserInput):
 
     # Ensures the Original Request has filled out fields

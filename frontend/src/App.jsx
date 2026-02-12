@@ -25,7 +25,7 @@ function App() {
     setShowArc(true)
 
     try {
-      const response = await axios.post('http://localhost:8000/process', {
+      const response = await axios.post('/api/process', {
         original_language: fromCountry,
         requested_language: toCountry,
         original_medication: medicineName
