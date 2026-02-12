@@ -215,7 +215,7 @@ def root():
     return {"status": "ok", "message": "Codex Translation API"}
 
 
-@app.post("/api/process", response_model=FinalOutput)
+@app.post("/process", response_model=FinalOutput)
 def process_medication(data: UserInput):
     """Process medication translation request."""
 
