@@ -11,16 +11,14 @@ app = FastAPI(
     version="1.0"
 )
 
-# Add CORS middleware to allow frontend requests
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000"],  # React frontend
+    allow_origins=["http://localhost:3000"],  
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
 
-# JSONs for INPUT/OUTPUT inbetween teams
 
 TRANSLATION_INPUT = "translation_input.json"
 TRANSLATION_OUTPUT = "translation_output.json"
@@ -28,8 +26,6 @@ TRANSLATION_OUTPUT = "translation_output.json"
 BACKEND_INPUT = "lookup_input.json"
 BACKEND_OUTPUT = "lookup_output.json"
 
-
-#Models for initial input and final output
 
 class UserInput(BaseModel):
     original_language: str
@@ -45,8 +41,6 @@ class FinalOutput(BaseModel):
     medication_matches: list
 
 
-#Helper functions
-
 def write_json(path, data):
     with open(path, "w") as f:
         json.dump(data, f, indent=2)
@@ -56,7 +50,6 @@ def read_json(path):
     with open(path, "r") as f:
         return json.load(f)
 
-#Wait function for time between responses othherwise timeout
 def wait_for_json(path, timeout=10):
     start = time.time()
     while not os.path.exists(path):
